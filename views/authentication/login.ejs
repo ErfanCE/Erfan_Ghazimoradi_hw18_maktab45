@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="icons/css/brands.min.css">
+    <link rel="stylesheet" href="stylesheets/login-page.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="left">
+            <div class="error">
+                <div class="error-alert">
+                    <p><%= alert %></p>
+                </div>
+            </div>
+
+            <div id="signin">
+                <form action="/authentication/login-user" , method="POST" id="loginForm">
+                    <div>
+                        <label>Username</label>
+                        <input name="username" id="username" type="text" class="text-input" autocomplete="off" />
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input name="password" id="password" type="password" class="text-input" autocomplete="off" />
+                    </div>
+                    <button type="submit" class="primary-btn">Login</button>
+                </form>
+
+                <div class="links">
+                    <a href="">Forgot Password</a>
+                    <a href="">Sign in with Company or School</a>
+                </div>
+                <div class="or">
+                    <hr class="bar" />
+                    <span>OR</span>
+                    <hr class="bar" />
+                </div>
+                <a href="/authentication/registeration" class="secondary-btn">Create an Account</a>
+            </div>
+            <footer id="main-footer">
+                <p>Copyright &copy; 2021, Erfan_CE LLC. All Rights Reserved.</p>
+                <br>
+                <div>
+                    <a href="">terms of use</a> | <a href="">Privacy Policy</a>
+                </div>
+            </footer>
+        </div>
+        <div id="right">
+            <div id="showcase">
+                <div class="showcase-content">
+                    <h1 class="showcase-text">
+                        Let's create the future <strong>together</strong>
+                    </h1>
+                    <a href="" class="secondary-btn">Start a FREE 10-day trial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="javascripts/login.js"></script> -->
+
+    <script src="javascripts/jquery-3.5.1.min.js"></script>
+    <script src="javascripts/main.js"></script>
+</body>
+
+</html>

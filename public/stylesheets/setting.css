@@ -1,0 +1,25 @@
+.controll {
+    margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+.setButton {
+    float: left;
+    margin-right: 100px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background-color: rgb(74, 30, 177);
+    color: #fff;
+    cursor: pointer;
+}
+
+.red {
+    background-color: rgb(110, 0, 0);
+}
+
+.content {
+    margin-top: 5rem;
+}
